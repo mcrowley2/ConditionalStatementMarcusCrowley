@@ -7,7 +7,7 @@ namespace ConditionalStatementMarcusCrowley
         static void Main(string[] args)
         {
             // Instruct user to type expected grade for the course
-            Console.WriteLine("What total score out of 100 do you expect to get in ISM 4300? No % sign.");
+            Console.WriteLine("Enter what total score out of 100 you expect to get in ISM 4300. No % sign.");
 
             // Declare local variables; User should be able to enter an integer
             int grade = Convert.ToInt32(Console.ReadLine());
@@ -75,7 +75,7 @@ namespace ConditionalStatementMarcusCrowley
             // Create if-else statement to determine a response to what the user enters
             if (lettergrade == "Invalid Entry")
             {
-                Console.WriteLine("Invalid Entry");
+                Console.WriteLine("Invalid Entry: Number must be between 0 and 100.");
             }
             else
             {
